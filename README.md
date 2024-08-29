@@ -1,6 +1,11 @@
 # Proyecto Grupal - Arquitectura de Software
 
 ## Tabla de Contenido
+- [0 Integrantes](./0/0.md)
+  - [0.1 David Mamani](./0/david/david.md)
+  - [0.2 Piero Rozas](./0/piero/piero.md)
+  - [0.3 Nicolas Castro](./0/nicolas/nicolas.md)
+  - [0.4 Elva](./1/elva/elva.md)
 - [1 Caso de Negocio](./1/1.md)
   - [1.1 Generalidades](./1/1.1/1.1.md)
   - [1.2 Modelo de Negocio](./1/1.2/1.2.md)
