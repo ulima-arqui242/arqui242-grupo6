@@ -2,7 +2,7 @@
 
 ## Tabla de Contenido
 - [0 Integrantes](./0/0.md)
-  - [0.1 David Mamani](./0/david/david.md)
+  - [0.1 David Mamani](./0/0.1/0.1.md)
   - [0.2 Piero Rozas](./0/piero/piero.md)
   - [0.3 Nicolas Castro](./0/nicolas/nicolas.md)
   - [0.4 Elva Lucia](./1/elva/elva.md)
