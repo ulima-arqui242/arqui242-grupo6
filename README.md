@@ -6,7 +6,7 @@
   - [0.2 Piero Rozas](./0/piero/piero.md)
   - [0.3 Nicolas Castro](./0/nicolas/nicolas.md)
   - [0.4 Elva Lucia](./1/elva/elva.md)
-  - [0.5 Jorge Justo](./0/jorge/jorge.md)
+  - [0.5 Jorge Justo](./0/0.2/0.2.md)
 - [1 Caso de Negocio](./1/1.md)
   - [1.1 Generalidades](./1/1.1/1.1.md)
   - [1.2 Modelo de Negocio](./1/1.2/1.2.md)
