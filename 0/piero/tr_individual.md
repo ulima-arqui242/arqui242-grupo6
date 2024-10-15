@@ -205,6 +205,8 @@ Explicacion: Astro es ideal para sitios estáticos, donde la prioridad es un ren
 páginas. Para un blog o portfolio, Astro puede generar el contenido estático sin agregar JavaScript innecesario al cliente, lo que 
 maximiza la velocidad de carga y la optimización SEO.
 
+## Video Demo
+- https://drive.google.com/file/d/1s28Y0IUbIBcw7dYWyj8SVN_mVe74dMeB/view?usp=sharing
 ---
 
 ## Referencias
