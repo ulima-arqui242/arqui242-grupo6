@@ -1,12 +1,22 @@
 import { Tabs } from 'expo-router';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import pruebaApi from "@/api/pruebaApi";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+
+  useEffect(() => {
+      const loadPrueba : () => Promise<void> = async () : Promise<void> => {
+          const result : any = await pruebaApi.prueba();
+          console.log(result.message);
+      }
+
+      loadPrueba();
+  }, [])
 
   return (
     <Tabs
