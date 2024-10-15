@@ -1,15 +1,9 @@
 const { Sequelize } = require("sequelize");
-require("dotenv").config();
+const config = require("../config/database");
 
-dbname = process.env["DB_NAME"];
-dbuser = process.env["DB_USER"];
-dbpass = process.env["DB_PASSWORD"];
-dbhost = process.env["DB_HOST"];
-dbport = process.env["DB_PORT"];
-
-const sequelize = new Sequelize(dbname, dbuser, dbpass, {
-  host: dbhost,
-  port: dbport,
+const sequelize = new Sequelize(config.postgres.dbname, config.postgres.dbuser, config.postgres.dbpass, {
+  host: config.postgres.dbhost,
+  port: config.postgres.dbport,
   dialect: "postgres",
   dialectOptions: {
     ssl: {
@@ -19,9 +13,5 @@ const sequelize = new Sequelize(dbname, dbuser, dbpass, {
   },
   logging: false,
 });
-
-sequelize.authenticate()
-  .then(() => console.log("Conectado"))
-  .catch(err => console.error("Error", err));
 
 module.exports = sequelize;
