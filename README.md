@@ -7,6 +7,7 @@
   - [0.3 Nicolas Castro](./0/nicolas/nicolas.md)
   - [0.4 Elva Lucia](./1/elva/elva.md)
   - [0.5 Jorge Justo](./0/0.5/0.5.md)
+  - [0.6 Renzo Arroyo](./0/0.6/0.6.md)
 - [1 Caso de Negocio](./1/1.md)
   - [1.1 Generalidades](./1/1.1/1.1.md)
   - [1.2 Modelo de Negocio](./1/1.2/1.2.md)
