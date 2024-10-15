@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Chiro'; 
+  src: url('/fonts/Amerig.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Chiro', sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}

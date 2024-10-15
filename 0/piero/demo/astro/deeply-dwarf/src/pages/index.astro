@@ -1,0 +1,45 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🤠💥 Hola, Jugador Promedio!</h1>
+			<p>
+				Bienvenido a la guia oficial de jugadas ingeniosas de <a href="https://catanuniverse.com/es/">Catan</a>
+				aca aprenderas a hacer jugadas de dudosa procedencia con la que podras asegurar tu victoria
+			</p>
+			<p>
+				En Catan, la clave para ganar está en una combinación de estrategias bien pensadas. Coloca tus primeros 
+				asentamientos en zonas con variedad de recursos y números frecuentes, priorizando una expansión eficiente. 
+				Usa el ladrón de manera estratégica para bloquear recursos clave de tus oponentes y mantén el control de puertos que 
+				complementen tus excedentes. El comercio es fundamental: negocia a tu favor, pero sin beneficiar demasiado a otros jugadores.
+				 Aprovecha cartas como el Monopolio en momentos críticos, y busca asegurar la Ruta Más Larga o el Ejército Más Grande 
+				 para obtener puntos adicionales. Finalmente, mantén buenas relaciones con los demás para facilitar intercambios, 
+				 pero sin destacar como una amenaza evidente.
+			</p>
+			<p>Aca te dejo algunas recomendaciones que puedes aplicar:</p>
+			<ul>
+				<li>Bloquea la obtencion de recursos con el ladron</li>
+				<li>Piensa bien donde iran tus primeros asentamientos, ya que de ahi sacaras los recursos</li>
+				<li>Comercia con tus amigos para el siguiente punto</li>
+				<li>Genera una cadena de Monopolio en la que tengas control total de los recursos</li>
+				<li>Consigue los puntos adicionales por la Ruta Más Larga y el Ejército Más Grande</li>
+			</ul>
+			<p>
+				Diviertete :D 
+				 o <a href="https://discord.gg/aNZwbrXP">unete a nuestro Discord</a> para mas consejos
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

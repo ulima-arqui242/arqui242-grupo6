@@ -130,3 +130,6 @@ dist
 .pnp.*
 # Ignore macOS system file
 .DS_Store
+
+.idea
+node_modules
