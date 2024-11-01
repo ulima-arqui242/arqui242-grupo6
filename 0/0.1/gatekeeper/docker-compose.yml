@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  proxy:
+    build:
+      context: ./proxy
+    ports:
+      - "80:80"
+    depends_on:
+      - autenticacion
+      - servicios
+
+  autenticacion:
+    build:
+      context: ./autenticacion
+    ports:
+      - "3001:3001"
+
+  servicios:
+    build:
+      context: ./servicios
+    ports:
+      - "3002:3002"
