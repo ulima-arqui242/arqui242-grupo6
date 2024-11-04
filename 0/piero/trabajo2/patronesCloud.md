@@ -17,7 +17,7 @@ Propone una solución de almacenamiento de los datos pesados en un repositorio c
 
 Por ejemplo, en los sistemas bancarios y financieros los informes o documentos financieros pesados se generan y almacenan en sistemas externos. Por ello los sistemas internos solo intercambian identificadores para recuperar estos informes cuando sea necesario, mejorando la eficiencia.
 
-#### Envio de estado de cuenta
+#### Caso de uso: envio de estado de cuenta
 
 1. Se realiza el envio del estado de cuenta
 2. Se almacena el estado de cuenta en el sistema externo
@@ -42,3 +42,13 @@ Por ejemplo, en los sistemas bancarios y financieros los informes o documentos f
 4. Recibe y lee el identificador del envio del video el usuario B
 5. El usuario B busca el video con la base de datos
 6. El ususario B desacrga el video y lo puede reproducir
+
+## Demo
+
+#### Para empezar
+
+En este caso se va a simular el almacenamieto con Amazon S3 y el envio de mensajes con Amazon SQS
+
+**Repositorio**: [Repositorio](prueba)
+
+**Video**: [Video](https://drive.google.com/file/d/1-JP_bDr-iY-g8BO--GJxEvHQ6PKIn-FL/view?usp=sharing)
