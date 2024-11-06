@@ -129,3 +129,5 @@ npm create astro@latest
 - [Next.js](https://nextjs.org)
 - [Vue.js](https://vuejs.org)
 - [Angular](https://angular.dev)
+
+**Video**: [Video](https://drive.google.com/file/d/1s28Y0IUbIBcw7dYWyj8SVN_mVe74dMeB/view?usp=sharing)
