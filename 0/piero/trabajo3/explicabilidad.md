@@ -90,8 +90,9 @@ En el caso de la satisfacción académica, su contribución varía según los va
 
 En este caso se utilizao explicabilidad local de la variable de "Satisfaccion Academica" para ver como influye en el modelo. segun los graficos solo es relevante cuando el valor es muy bajo o muy alto, debido a que en valores medios baja su importanca hasta el septimo lugar
 
-Fuentes:
-https://www.kaggle.com/datasets/hopesb/student-depression-dataset
-https://docs.google.com/document/d/1Py5gog-leLkhMtiRjUS4SG1iuZGz1EX-/edit?usp=sharing&ouid=100176324950979962238&rtpof=true&sd=true 
+#### Fuentes:
+- https://www.kaggle.com/datasets/hopesb/student-depression-dataset
+- https://docs.google.com/document/d/1Py5gog-leLkhMtiRjUS4SG1iuZGz1EX-/edit?usp=sharing&ouid=100176324950979962238&rtpof=true&sd=true 
 
-Video:
+#### Video:
+- https://drive.google.com/file/d/1C82VTF0q-DRPhK5oaFEouJvJzEXctaGc/view?usp=sharing
