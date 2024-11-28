@@ -239,3 +239,6 @@ LIME generó la siguiente explicación para la predicción de la instancia selec
 - La anchura del sépalo menor o igual a 2.80 cm influyó negativamente (-0.0161).
 
 ![alt text](image.png)
+
+## LINK DE DRIVE
+https://drive.google.com/drive/folders/1nWUhhcheXmPVXa8EHXI915AceEPlg8ZG?usp=sharing
