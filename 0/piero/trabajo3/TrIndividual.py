@@ -51,7 +51,6 @@ print("Confusion Matrix:\n", confusion_matrix(y_test, svm_predictions))
 print("Classification Report:\n", classification_report(y_test, svm_predictions))
 
 '''
-
 # SHAP global
 import shap
 
@@ -64,7 +63,6 @@ shap.summary_plot(shap_values_xgb, X_test, feature_names=X_test.columns, max_dis
 explainer_svm = shap.KernelExplainer(svm_model.predict, X_train_scaled)
 shap_values_svm = explainer_svm.shap_values(X_test_scaled) 
 shap.summary_plot(shap_values_svm, X_test_scaled, feature_names=X.columns, max_display=10)
-
 '''
 
 # SHAP local
@@ -72,16 +70,15 @@ import shap
 instance=1
 print(X_test.iloc[instance])
 
-indice_10 = X_test[X_test['Academic Pressure'] == 1].index[0]
-indice_11 = X_test[X_test['Academic Pressure'] == 2].index[0]
-indice_12 = X_test[X_test['Academic Pressure'] == 3].index[0]
-indice_13 = X_test[X_test['Academic Pressure'] == 4].index[0]
-indice_14 = X_test[X_test['Academic Pressure'] == 5].index[0]
+indice_1 = X_test[X_test['Academic Pressure'] == 1].index[0]
+indice_3 = X_test[X_test['Academic Pressure'] == 3].index[0]
+indice_5 = X_test[X_test['Academic Pressure'] == 5].index[0]
 
 # XGBoost
 explainer_xgb = shap.TreeExplainer(xgb_model)
 shap_values_xgb = explainer_xgb(X)
-for instance in [indice_10, indice_11, indice_12, indice_13, indice_14]:
+for instance in [indice_1, indice_3, indice_5]:
     shap.plots.waterfall(shap_values_xgb[instance], max_display=10)
     plt.show()
+
 

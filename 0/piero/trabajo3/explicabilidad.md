@@ -61,4 +61,37 @@ SHAP puede aplicarse a múltiples tipos de modelos de Machine Learning:
 
 ## Ejemplos de uso
 
-En este caso se uso un
+En este proyecto, se utilizó un dataset sobre estudiantes para predecir la probabilidad de depresión, considerando factores como género, hábitos alimenticios, duración del sueño y presión académica. Se aplicaron técnicas de preprocesamiento, como codificación de variables categóricas y normalización, para preparar los datos. Luego, se entrenaron los modelos XGBoost y SVM, cuyos desempeños fueron evaluados mediante métricas como precisión, matrices de confusión y el F1-score.
+
+![MetricasModelos](MetricasModelos.png)
+Los resultados obtenidos muestran que el modelo SVM supera al XGBoost en términos de desempeño general, destacándose con un F1-score de 0.98, frente al 0.96 obtenido por XGBoost. Este resultado también se refleja en la matriz de confusión, donde el SVM logra una mejor proporción de predicciones correctas en ambas clases.
+
+Para interpretar los resultados, se empleó la herramienta SHAP, que permitió analizar la contribución de cada característica a las predicciones, tanto a nivel global como local.
+
+### Shap Global
+
+#### XGBoost
+![ShapXGBoost](ShapXGBoost.png)
+
+#### SVM
+![ShapSVM](ShapSVM.png)
+
+Los resultados de SHAP para ambos modelos resaltan que la variable más importante es si el estudiante ya ha tenido pensamientos suicidas. Le sigue la presión académica como un factor determinante. En el tercer lugar, existe una disputa entre la satisfacción académica y el estrés financiero, dependiendo del modelo. Esto evidencia que la mayoría del peso recae en factores académicos, mientras que aspectos demográficos tienen un impacto menor pero relevante.
+
+En el caso de la satisfacción académica, su contribución varía según los valores individuales de los estudiantes. Los estudiantes con bajos niveles de satisfacción (Puntos azules) tienden a contribuir positivamente a la predicción de mayores probabilidades de depresión (Se encuentra al lado derecho del eje X).
+
+### Shap Local
+
+#### Satisfaccion Academica
+
+![PresionAcademica1](PresionAcademica1.png)
+![PresionAcademica3](PresionAcademica3.png)
+![PresionAcademica5](PresionAcademica5.png)
+
+En este caso se utilizao explicabilidad local de la variable de "Satisfaccion Academica" para ver como influye en el modelo. segun los graficos solo es relevante cuando el valor es muy bajo o muy alto, debido a que en valores medios baja su importanca hasta el septimo lugar
+
+Fuentes:
+https://www.kaggle.com/datasets/hopesb/student-depression-dataset
+https://docs.google.com/document/d/1Py5gog-leLkhMtiRjUS4SG1iuZGz1EX-/edit?usp=sharing&ouid=100176324950979962238&rtpof=true&sd=true 
+
+Video:
